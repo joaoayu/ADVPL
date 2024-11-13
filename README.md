@@ -4,4 +4,5 @@
 
 #### Links
 Construtor TDialog:New - https://tdn.totvs.com/display/tec/Construtor+TDialog%3ANew<br>
-Construtor TButton:New - https://tdn.totvs.com/display/tec/Construtor+TButton%3ANew
+Construtor TButton:New - https://tdn.totvs.com/display/tec/Construtor+TButton%3ANew<br>
+Construtor TSay:New    - https://tdn.totvs.com/display/tec/Construtor+TSay%3ANew
