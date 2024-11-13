@@ -1,0 +1,14 @@
+//Bibliotecas necessárias
+#include 'TOTVS.CH'
+#include 'PROTHEUS.CH'
+
+User Function zTButton()
+Local oDlg1   //Variavel que irá receber a classe TDialog
+Local oButton //Variavel que armazenara a classe do botão
+
+oDlg1   := TDialog:New(180, 180,550, 700,'Exemplo TDialog',,,,,CLR_BLACK,CLR_WHITE,,,.T.) //Parametros da TDialog
+oButton := TButton:New(002, 002, "Mensagem de alerta", oDlg1,{||alert("Você clicou no botão de alerta!")}, 40, 10,,,.F.,.T.,.F.,,.F.,,,.F.)
+
+oDlg1:Activate(,,,) //Ativação da TDialog
+
+Return
