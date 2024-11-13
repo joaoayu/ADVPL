@@ -1,0 +1,22 @@
+#include 'totvs.ch'
+#include 'protheus.ch'
+
+User function TSay()
+Local oDlg1 //Variavel que receberá a chamada da classe TDialog
+Local cTituloJanela := "ACESSOS RÁPIDOS" //Variavel para mostrar o titulo da janela do TDialog
+Local oButton1, oButton2 //Variavel que armazenará a classe dos botões
+Local oSay1, oSay2 //Variavel que armazenara a TSay e exibira um texto na tela
+
+oDlg1 := TDialog():New(180,180,550,700,cTituloJanela,,,,,CLR_BLACK, CLR_WHITE,,,.T.) //Indica onde a janela vai aparecer na tela / nome da janela
+
+oButton1 := TButton():New(20,50,"Clientes",oDlg1,{|| Mata030()}, 40,15,,,.F.,.T.,.F.,,.F.,,,.F.) //Chama tela de clientes
+oSay1    := TSay():New(25,90,{||'Telas utilitarias do protheus'},oDlg1,,,,,,.T.,CLR_RED, CLR_WHITE,200,20) //Indica onde a janela vai aparecer na tela / nome da janela
+
+oButton2 := TButton():New(40,50,"Fornecedores",oDlg1,{||Mata020()}, 40,15,,,.F.,.T.,.F.,,.F.,,,.F.) //Chama tela de fornecedores
+oSay2    := TSay():New(45,90,{||'Telas utilitarias do protheus'},oDlg1,,,,,,.T.,CLR_RED, CLR_WHITE,200,20) //Indica onde a janela vai aparecer na tela / nome da janela
+
+
+
+oDlg1:Activate(,,,) //É o metodo que vai chamar a classe e ativar a janela
+
+return
