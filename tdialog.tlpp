@@ -1,0 +1,12 @@
+//Bibliotecas necessárias
+#include 'TOTVS.CH'
+#include 'PROTHEUS.CH'
+
+User Function zTdialog()
+Local oDlg1  //Variavel que irá receber a classe TDialog
+
+oDlg1 := TDialog:New(180, 180,550, 700,'Exemplo TDialog',,,,,CLR_BLACK,CLR_WHITE,,,.T.) //Parametros da TDialog
+
+oDlg1:Activate(,,,) //Ativação da TDialog
+
+Return
